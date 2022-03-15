@@ -1,0 +1,185 @@
+@media screen and (min-height: 600px) { /* 일반적인 창크기 */
+    .loginFrame {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 10vh;
+      width: 400px;
+      height: 75vh;
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: -5px 5px 15px -5px black;
+      opacity: 0.9;
+    }
+  
+    .registerArea{
+      width: 80%;
+      height: 60vh;
+      border-radius: 30px;
+      text-align: center;
+    }
+  
+    .loginArea {
+      position: relative;
+      top: 20vh;
+      width: 80%;
+      height: 90%;
+      border-radius: 30px;
+      text-align: center;
+    }
+  
+    .findIDArea{
+      width: 80%;
+      height: 40vh;
+      border-radius: 30px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-height: 600px) { /* 높이가 최소화 됐을 때 */
+    .loginFrame {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 10vh;
+      width: 400px;
+      height: 500px;
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: -5px 5px 15px -5px black;
+      opacity: 0.9;
+    }
+  
+    .registerArea{
+      width: 80%;
+      height: 400px;
+      border-radius: 30px;
+      text-align: center;
+    }
+  
+    .loginArea {
+      position: relative;
+      top: 13vh;
+      width: 80%;
+      height: 400px;
+      border-radius: 30px;
+      text-align: center;
+    }
+  
+    .findIDArea{
+      width: 80%;
+      height: 200px;
+      border-radius: 30px;
+      text-align: center;
+    }
+  }
+  
+  .loginArea::before {
+    content: 'Login';
+    position: absolute;
+    top: -60px;
+    left: 115px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial , sans-serif;
+  }
+  
+  .idInput , .pwInput{
+    width: 80%;
+    margin-top: 20px;
+    background-color:transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    outline-style: none;
+    display: inline-block;
+    height: 30px;
+  }
+  
+  .sbButton{
+    margin-top: 30px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color : #23a6d5; 
+    color: rgb(196, 233, 255);
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .sbButton:hover {
+    background-color : #0d7ba3; 
+    color: rgb(255, 255, 255);
+  }
+  
+  .findId , .findpw , .regis{
+    position: relative;
+    top: 40px;
+    margin-right: 5px;
+    font-size: 12px;
+    color:rgb(136, 136, 136);
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+    cursor: pointer;
+  }
+  
+  .findId::after {
+    content: '|';
+    position: relative;
+    right: -2px;
+  }
+  
+  .findpw::after {
+    content: '|';
+    position: relative;
+    right: -2px;
+  }
+  
+  .registerArea::before {
+    content: 'Register';
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial , sans-serif;
+  }
+  
+  .findIDArea::before {
+    content: 'Forgot Password?';
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial , sans-serif;
+  }
+  
+  .pwChecking{
+    font-size: 12px;
+    opacity: 1;
+    position: relative;
+    top: 15px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+  }
+  
+  .showPw{
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 1;
+    position: relative;
+    top: 2.5px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+  }
+  
+  .returnButton {
+    margin-top: 20px;
+  }
